@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <map>
+#include <set>
 
 using namespace std;
 
@@ -22,36 +23,24 @@ string sort_chars(string s) {
 int main() {
     string s;
 
-    // first-> Palabra ordenada. second-> Vector con la misma palabra ordenada
+    // first -> palabra ordenada
+    // second -> palabras que tienen esa misma firma
     map<string, vector<string>> mapa; 
 
     while (cin >> s) {
         string ordenat = sort_chars(s);
-        auto it = mapa.find(ordenat);
-        if (it != mapa.end()) {
-            (*it).second.push_back(s);
-        } else {
-            vector<string> v;
-            v.push_back(s);
-            mapa.insert({ordenat, v});
-        }
+        mapa[ordenat].push_back(s);
     }
 
-    for (auto it = mapa.begin(); it != mapa.end(); it++) {
-        vector<string> res;
-        if ((*it).second.size() > 1) {
-            res = it->second;
+    for (auto it = mapa.begin(); it != mapa.end(); ++it) {
+        set<string> unicas(it->second.begin(), it->second.end());
 
-            map<string, bool> mapa2;
-            for (int j = 0; j < res.size(); j++) {
-                mapa2.insert({res[j], false});
-            }
-
-            for (auto it2 = mapa2.begin(); it2 != mapa2.end(); it2++) {
-                cout << it2->first;
-                if (it2 != mapa2.end()--) {
-                    cout <<  " ";
-                }
+        if (unicas.size() > 1) {
+            int i = 0;
+            for (auto it2 = unicas.begin(); it2 != unicas.end(); ++it2) {
+                cout << *it2;
+                if (i != (int)unicas.size() - 1) cout << " ";
+                ++i;
             }
             cout << endl;
         }
