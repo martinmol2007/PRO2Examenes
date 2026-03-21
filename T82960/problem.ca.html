@@ -1,0 +1,76 @@
+<h1 id="arbre-binari-amb-totes-les-fulles-iguals">Arbre binari amb totes
+les fulles iguals</h1>
+<p>Donat un arbre binari, les seves <em>fulles</em> són els subarbres
+que tenen les dues branques <code>left</code> i <code>right</code>
+buides. A més, en aquest problema considerarem exclusivament arbres
+binaris que no tenen subarbres amb només una branca buida. És a dir, en
+aquest tipus d’arbres un subarbre és: o bé una fulla, o bé les dues
+branques són subarbres no buits.</p>
+<p>Implementa la funció <code>tree_all_leaves_equal</code>, que
+determina si, en un arbre binari d’enters, totes les fulles tenen el
+mateix valor:</p>
+<pre><code>/**
+ * @brief Determina si totes les fulles d&#39;un arbre tenen 
+ *        el mateix valor.
+ * 
+ * @param  t  Un arbre binari d&#39;enters
+ * @returns  `true` si totes les fulles són iguals, 
+ *           `false` altrament.
+ *
+ * @pre  En tots els subarbres de `t` es compleix: o bé són 
+ *       fulles, o bé les dues branques són no buides.
+ */
+bool tree_all_leaves_equal(BinTree&lt;int&gt; t);</code></pre>
+<h2 class="unnumbered" id="observació">Observació</h2>
+<p>Els fitxers públics (icona del gatet) contenen:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>main.cc</code></td>
+<td style="text-align: left;">el programa principal, amb la
+entrada/sortida feta</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>bintree.hh</code></td>
+<td style="text-align: left;">la classe
+<code>BinTree&lt;T&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>bintree-io.hh</code></td>
+<td style="text-align: left;">l’entrada/sortida de
+<code>BinTree&lt;T&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>bintree-inline.hh</code></td>
+<td style="text-align: left;">l’entrada/sortida &quot;inline&quot; de
+<code>BinTree&lt;T&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Makefile</code></td>
+<td style="text-align: left;">per compilar amb <code>make</code>
+còmodament</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>.vscode</code></td>
+<td style="text-align: left;">carpeta per compilar i debuggar amb
+VSCode</td>
+</tr>
+</tbody>
+</table>
+<p>Cal implementar <code>tree_all_leaves_equal</code> en un
+<strong>fitxer <code>.cc</code> nou</strong>, compilar, i finalment
+<strong>enviar només el fitxer amb la funció</strong>.</p>
+<h2 class="unnumbered" id="entrada">Entrada</h2>
+<p>L’entrada comença amb &quot;visual&quot; o &quot;inline&quot; per indicar el format dels
+arbres d’entrada. Després ve una seqüència d’arbres en el format
+indicat. (D’això s’encarrega el programa principal).</p>
+<h2 class="unnumbered" id="sortida">Sortida</h2>
+<p>La sortida són els <code>string</code>s resultants de cridar la
+funció <code>tree_all_leaves_equal</code>, un resultat per línia.
+(D’això també s’encarrega el programa principal.)</p>
+<h2 class="unnumbered" id="informació-del-problema">Informació del
+problema</h2>
+<p><span>Autoria:</span> Pau Fernández</p>
+<p><span>Generació:</span> 2026-01-25T12:56:35.671Z</p>
+<p>© <em>Jutge.org</em>, 2006–2026.<br />
+<a href="https://jutge.org">https://jutge.org</a></p>
