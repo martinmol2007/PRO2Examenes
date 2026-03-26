@@ -1,0 +1,15 @@
+# iguales
+1 2 3
+1 2 3
+# rotación 1
+1 2 3
+3 1 2
+# diferentes reverso
+1 2 3 
+3 2 1
+# diferentes
+1 2 1 2
+1 1 2 1
+# rotación 4
+2 3 4 5 1
+5 1 2 3 4
