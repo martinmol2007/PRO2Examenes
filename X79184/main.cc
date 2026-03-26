@@ -41,10 +41,14 @@ int main () {
         else if (comando == "PEOPLEWITHAGE") {
             int num;
             cin >> num;
+            
+            int i = 0;
+            int n = edad_lista[num].size();
 
             for (auto it = edad_lista[num].begin(); it != edad_lista[num].end(); it++) {
                 cout << (*it);
-                if (it != edad_lista[num].end()--) cout << " ";
+                if (i < n-1) cout << " ";
+                i++;
             }
             cout << endl;
         }
