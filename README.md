@@ -43,4 +43,4 @@ Incluye casos de entrada (`.inp`) y salidas esperadas (`.cor`) para poder testea
 ### 🚀 Subir cambios a GitHub
 
 ```bash
-make push
+make (save)
