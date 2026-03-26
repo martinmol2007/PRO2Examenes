@@ -9,6 +9,7 @@ Incluye casos de entrada (`.inp`) y salidas esperadas (`.cor`) para poder testea
 ---
 
 ## 📂 Estructura
+.
 ├── S19387/
 ├── T82960/
 ├── V40142/
@@ -18,8 +19,8 @@ Incluye casos de entrada (`.inp`) y salidas esperadas (`.cor`) para poder testea
 ├── X80181/
 ├── Z70685/
 ├── Z84907/
-├── Makefile/
-└── README.md/
+├── Makefile
+└── README.md
 
 ## ℹ️ Info 
 - Carpetas → exámenes organizados por código  
