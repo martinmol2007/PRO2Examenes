@@ -8,7 +8,7 @@ Incluye casos de entrada (`.inp`) y salidas esperadas (`.cor`) para poder testea
 
 ---
 
-## 📂 Estructura
+## 📂 Estructura (Sin actualizar)
 ```
 ├── S19387/
 ├── T82960/
