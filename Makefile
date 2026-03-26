@@ -3,5 +3,5 @@ save:
 	git commit -m "Problemas"
 	git push
 	clear
-	echo Todo guardado y subido a GitHub!
+	@echo Todo guardado y subido a GitHub!
 .PHONY: save
